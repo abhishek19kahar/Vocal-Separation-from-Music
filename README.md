@@ -142,10 +142,10 @@ Contributions are encouraged! Fork the repository, implement your changes, and s
 - **Moises API Team**: For their exceptional audio processing services.
 - **Inspiration**: Addressing the growing demand for advanced tools in music production and audio editing.
 
-## BSc IT  Final year project
+## BSc IT  Final Year Project
 - **College Name**: Mulund college of commerce
 - **Name**: Abhishek Jaykumar Kahar
 
 ## For any Queries
-- **Email**: DM at these Email:abhishekgithub19@gmail.com
+- **Email**:abhishekgithub19@gmail.com
 
