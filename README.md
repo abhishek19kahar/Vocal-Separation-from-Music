@@ -144,7 +144,7 @@ Contributions are encouraged! Fork the repository, implement your changes, and s
 
 ## BSc IT  Final year project
 - **College Name**: Mulund college of commerce
-- **Name**:Abhishek Jaykumar Kahar
+- **Name**: Abhishek Jaykumar Kahar
 
 ## For any Queries
 - **Email**: DM at these Email:abhishekgithub19@gmail.com
