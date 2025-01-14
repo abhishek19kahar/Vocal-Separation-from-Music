@@ -1,0 +1,270 @@
+
+.header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #116480;
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 32px;
+    color: rgba(22,119,172,255);
+    font-weight: 700;
+    color:#22c8ff;
+}
+.logoutButton {
+    background: transparent;
+    border: none;
+    font-size: 24px; /* Adjust the size of the icon */
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .logoutButton:hover {
+    color: #ff6347; /* Change color on hover */
+  }
+  
+  .logoutButton i {
+    font-size: 24px; /* Icon size */
+    vertical-align: middle; /* Center the icon vertically */
+  }
+  
+
+.navbar a{
+    position:relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+.navbar a::before{
+    content:'';
+    position:absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background:#fff;
+    transition: .3s;
+}
+.navbar a:hover::before{
+  width: 100%;
+}
+
+.box{
+    margin-top: 94px;
+    position:relative;
+    width: 1500px;
+     height: 600px;
+    backdrop-filter: blur(30px);
+    border:1px solid #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px ;
+}
+
+.box h1,h2{
+    text-align: center;
+    color  :#22c8ff;
+    font-family: "Poppins", serif;
+    line-height: 200px;
+}
+button{
+    background: transparent;
+    color: black;
+} 
+
+
+/* General Styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: transparent;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  animation: slideDown 1s ease-in-out;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #22c8ff;
+  margin-top: -60px;
+  margin-bottom: 40px;
+  text-align: center;
+  animation: slideUp 1s ease-in-out;
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.input, .textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  background: transparent;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.input:focus, .textarea:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  transform: scale(1.03);
+}
+
+.textarea {
+  height: 100px;
+  resize: none;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Contact Info Styling */
+.contactInfo {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.contactInfo a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactInfo a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .input, .textarea {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .input, .textarea {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .button {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+}

@@ -1,0 +1,266 @@
+.header{
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #116480;
+  backdrop-filter: blur(30px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo{
+  font-size: 32px;
+  color: rgba(22,119,172,255);
+  font-weight: 700;
+  color:#22c8ff;
+}
+.logoutButton {
+  background: transparent;
+  border: none;
+  font-size: 24px; /* Adjust the size of the icon */
+  color: #fff;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.logoutButton:hover {
+  color: #ff6347; /* Change color on hover */
+}
+
+.logoutButton i {
+  font-size: 24px; /* Icon size */
+  vertical-align: middle; /* Center the icon vertically */
+}
+
+
+.navbar a{
+  position:relative;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+
+}
+.navbar a::before{
+  content:'';
+  position:absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background:#fff;
+  transition: .3s;
+}
+.navbar a:hover::before{
+width: 100%;
+}
+
+.box{
+  margin-top: 260px;
+  position:relative;
+  width: 1600px;
+   height: 900px;
+   /* max-height: fit-content; */
+  background: transparent;
+  backdrop-filter: blur(30px);
+  border:1px solid #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius:20px ;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius:20px ;
+}
+
+.box h1{
+  text-align: center;
+  color  :#22c8ff;
+  font-family: "Poppins", serif;
+  line-height: 200px;
+}
+button{
+  background: transparent;
+  color: black;
+} 
+
+
+
+.progressContainer {
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: center; /* Center the progress bar horizontally */
+  align-items: center; /* Center the progress bar vertically */
+  background-color: skyblue;
+  border-radius: 25px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progressBar {
+  width: 100%;
+  height: 100%;
+  background-color: #22c8ff;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shine Effect Animation */
+@keyframes shine {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.progressBar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+  animation: shine 2s infinite;
+}
+
+
+input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.bt {
+  background-color: #22c8ff;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* .bt1 {
+  background-color: #22c8ff;
+  color: white;
+  font-size: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} */
+.bt1 {
+  background-color: #22c8ff;
+  color: white;
+  font-size: 13px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bt1:hover {
+  background-color: #1a9eeb;
+}
+.bt:disabled {
+  background-color: #aaa;
+}
+
+.bt:hover {
+  background-color: #1a9eeb;
+}
+/* .bt1:hover {
+  background-color: #1a9eeb;
+} */
+audio {
+  align-items: center;
+  margin-top: 10px;
+  width: 30%;
+  max-width: 500px;
+}
+.alinks {
+  display: block;
+  margin-top: 10px;
+  color: #22c8ff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.ul{
+  padding: -10px;
+  align-items: center;
+}
+.alinks:hover {
+  text-decoration: underline;
+}
+
+.music {
+  padding-top: 10px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100 px;
+  max-width: 10000px;
+  margin: 0 auto;
+}
+.results {
+  padding: 10px; /* Reduced padding around the container */
+  max-width: 2000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* Change the background of the control panel */
+audio::-webkit-media-controls-panel {
+  background-color: #116480; /* Background color of the control bar */
+  color: #fff; /* Text color */
+}
+
+/* Change the play button background */
+audio::-webkit-media-controls-play-button {
+  background-color: transparent; /* Play button color */
+  border-radius: 50%; /* Make it circular */
+}
+
+/* Change the progress bar track color */
+audio::-webkit-media-controls-timeline {
+  background-color: transparent; /* Background of the progress bar */
+}
+
+/* Change the color of the current time display */
+audio::-webkit-media-controls-current-time-display {
+  color: #22c8ff; /* Text color for the current time */
+}
+
+/* Change the volume slider background */
+audio::-webkit-media-controls-volume-slider-container {
+  background-color: #f0f0f0; /* Background for the slider container */
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #22c8ff; /* Slider color */
+}
+
+/* Change the fullscreen button background */
+audio::-webkit-media-controls-fullscreen-button {
+  background-color: #ff6347; /* Background color for fullscreen button */
+  border-radius: 5px;
+}
+ 

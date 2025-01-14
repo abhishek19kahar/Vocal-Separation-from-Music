@@ -1,0 +1,276 @@
+.header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #116480;
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 32px;
+    color: rgba(22,119,172,255);
+    font-weight: 700;
+    color:#22c8ff;
+}
+.logoutButton {
+    background: transparent;
+    border: none;
+    font-size: 24px; 
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .logoutButton:hover {
+    color: #ff6347; 
+  }
+  
+  .logoutButton i {
+    font-size: 24px; 
+    vertical-align: middle; 
+  }
+  
+
+.navbar a{
+    position:relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+.navbar a::before{
+    content:'';
+    position:absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background:#fff;
+    transition: .3s;
+}
+.navbar a:hover::before{
+  width: 100%;
+}
+
+.box{
+    margin-top: 94px;
+    position:relative;
+    width: 1500px;
+     height: 600px;
+    background: transparent;
+    border:1px solid #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px ;
+}
+
+.box h1{
+    text-align: center;
+    color  :#22c8ff;
+    font-family: "Poppins", serif;
+    line-height: 200px;
+}
+button{
+    background: transparent;
+    color: black;
+} 
+
+
+
+
+/* Container for the whole page */
+.servicesContainer {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  margin-top: 500px;
+  animation: fadeIn 1s ease-out;
+}
+
+.pageTitle {
+  font-size: 36px;
+  color: #1e90ff;
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeIn 1.2s ease-out;
+}
+
+/* Flex container for the service cards */
+.servicesSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Each individual service card */
+.serviceCard {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 45%;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: calc(var(--animation-index, 0) * 0.2s);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Service Title */
+.serviceTitle {
+  font-size: 28px;
+  color: #ff6347;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.serviceDescription {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Learn More Button */
+.learnMoreButton {
+  background-color: transparent;
+  color: #ff6347;
+  border: 2px solid #ff6347;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.learnMoreButton:hover {
+  transform: scale(1.1);
+  background-color: #ff6347;
+  color: white;
+  box-shadow: 0 5px 15px rgba(255, 99, 71, 0.5);
+}
+
+/* Call to action button */
+.ctaContainer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.ctaButton {
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: popIn 1s ease-out;
+}
+
+.ctaButton:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(30, 144, 255, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .serviceCard {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .pageTitle {
+    font-size: 30px;
+  }
+
+  .ctaButton {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .learnMoreButton {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageTitle {
+    font-size: 26px;
+  }
+
+  .serviceTitle {
+    font-size: 22px;
+  }
+
+  .serviceDescription {
+    font-size: 16px;
+  }
+
+  .ctaButton {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .learnMoreButton {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+/* Animations */
+
+/* Fade in for the container */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fade-in and slide up for cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pop-in effect for CTA button */
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
